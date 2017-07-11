@@ -18,6 +18,13 @@ class Demo extends Component {
         >
           This will follow the cursor!
         </CursorDiv>
+
+        <div onMouseMove={(e) => {
+          e.stopPropagation();
+          e.preventDefault();
+        }} style={{width: 300, height: 300, backgroundColor: 'yellow'}}>
+          Try to stop the event...
+        </div>
       </div>
     );
   }

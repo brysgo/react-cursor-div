@@ -8,10 +8,15 @@ export default class CursorDiv extends Component {
       x: 0,
       y: 0
     };
+    this._onMouseMove = this._onMouseMove.bind(this);
   }
 
   componentDidMount() {
-    window.onmousemove = this._onMouseMove.bind(this);
+    document.addEventListener('mousemove', this._onMouseMove);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('mousemove', this._onMouseMove);
   }
 
   _onMouseMove(e) {
