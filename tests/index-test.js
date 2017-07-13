@@ -27,13 +27,13 @@ describe("CursorDiv", () => {
       expect(node.innerHTML).toContain("some child text");
     });
     window.onmousemove({
-      screenX: 10,
-      screenY: 20
+      clientX: 10,
+      clientY: 20
     });
     expect(node.innerHTML).toContain(`style="position: fixed; left: 10px; top: 20px;"`);
     window.onmousemove({
-      screenX: 34,
-      screenY: 14
+      clientX: 34,
+      clientY: 14
     });
     expect(node.innerHTML).toContain(`style="position: fixed; left: 34px; top: 14px;"`);
   });
