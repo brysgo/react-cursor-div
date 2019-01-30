@@ -1,6 +1,6 @@
 {
   "name": "react-cursor-div",
-  "version": "1.1.1",
+  "version": "0.0.0-semantic-release",
   "description": "react-cursor-div React component",
   "main": "lib/index.js",
   "module": "es/index.js",
