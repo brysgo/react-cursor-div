@@ -23,7 +23,7 @@
     "react": "15.x"
   },
   "devDependencies": {
-    "nwb": "0.18.x",
+    "nwb": "0.23.x",
     "prettier": "^1.5.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
